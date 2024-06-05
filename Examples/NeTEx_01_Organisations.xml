@@ -42,39 +42,5 @@
                 </ResourceFrame>
             </frames>
         </CompositeFrame>
-        <CompositeFrame id="epd:IT:ITH35:CompositeFrame_EU_PI_STOP_OFFER:FARE:TaxiVenezia:ita" version="1">
-            <ValidBetween>
-                <FromDate>2024-01-01T00:00:00.000+02:00</FromDate>
-                <ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
-            </ValidBetween>
-            <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
-            <!-- ======= FRAME DEFAULTS ======= -->
-            <frames>
-                <ResourceFrame id="epd:IT:ITH35:ResourceFrame_EU_PI_COMMON:ita:Taxi" version="1">
-                    <!--- =======Operatori======== -->
-                    <organisations>
-                        <Operator id="IT:ITH35:Operator:taxiRTVENEZIA:RTVENEZIA" version="1">
-                            <PrivateCode>RTVENEZIA</PrivateCode>
-                            <Name>Cooperativa Arigiana Radiotaxi Venezia</Name>
-                            <ShortName>RTVENEZIA</ShortName>
-                            <LegalName>Cooperativa Arigiana Radiotaxi Venezia Scarl</LegalName>
-                            <TradingName>RTVENEZIA</TradingName>
-                            <ContactDetails>
-                                <Email>info@radiotaxivenezia.com/</Email>
-                                <Phone>+39-041-5964</Phone>
-                                <Url>www.radiotaxivenezia.com</Url>
-                            </ContactDetails>
-                            <OrganisationType>operator</OrganisationType>
-                            <Address id="IT:ITH35:Operator:taxiRTVENEZIA:1">
-                                <CountryName>Italia</CountryName>
-                                <Street>Via Piave 208</Street>
-                                <Town>Mestre</Town>
-                                <PostCode>30171</PostCode>
-                            </Address>
-                        </Operator>
-                    </organisations>
-                </ResourceFrame>
-            </frames>
-        </CompositeFrame>
     </dataObjects>
 </PublicationDelivery>
