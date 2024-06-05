@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- NeTEX italian Profile | Taxi Organisations + Parkings | Revisione 2024-05-16-->
+<!-- NeTEX italian Profile | Taxi Organisations | Revisione 2024-05-16-->
 <!-- Realizzato da Taxi.it-->
-<!-- Fonte: https://github.com/5Tsrl/netex-italian-profile/blob/main/Examples/Netex_ITA_1.10_EPIP%2BLevel2%2BFare%2BAlternativeModes%2BAccessibility_with_versioning_final.xml  -->
+<!-- Fonte: https://github.com/5Tsrl/netex-italian-profile/blob/main/Examples/Netex_ITA_1.10_EPIP%2BLevel2%2BFare%2BAlternativeModes%2BAccessibility_with_versioning_final.xml -->
 <PublicationDelivery xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:siri="http://www.siri.org.uk/siri" version="1.0" xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex ../xsd/NeTEx_publication_Lev4.xsd">
     <PublicationTimestamp>2024-01-01T12:00:00.000+02:00</PublicationTimestamp>
     <ParticipantRef>RAP</ParticipantRef>
     <Description>Esempio di profilo italiano del NeTEx con dati Taxi</Description>
     <dataObjects>
         <!-- Composite Frame Taxi ( Organisations ) -->
-        <CompositeFrame id="epd:IT:ITH36:CompositeFrame_EU_PI_STOP_OFFER:FARE:TaxiPadova:ita" version="1">
+        <CompositeFrame id="epd:IT:ITH3:CompositeFrame_EU_PI_STOP_OFFER:FARE:TaxiPadova:ita" version="1">
             <ValidBetween>
                 <FromDate>2024-01-01T00:00:00.000+02:00</FromDate>
                 <ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
             </ValidBetween>
             <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
             <!-- ======= FRAME DEFAULTS ======= -->
+            <FrameDefaults>
+                <DefaultCodespaceRef ref="ita"/>
+            </FrameDefaults>
             <frames>
-                <ResourceFrame id="epd:IT:ITH36:ResourceFrame_EU_PI_COMMON:ita:Taxi" version="1">
+                <ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova:ita" version="1">
                     <!--- =======Operatori======== -->
                     <organisations>
-                        <Operator id="IT:ITH36:Operator:taxiCORAPA:CORAPA" version="1">
+                        <Operator id="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1">
                             <PrivateCode>CORAPA</PrivateCode>
                             <Name>Cooperativa Radiotaxi Padova</Name>
                             <ShortName>CORAPA</ShortName>
@@ -28,10 +31,10 @@
                             <ContactDetails>
                                 <Email>info@taxipadova.it</Email>
                                 <Phone>+39-049-651333</Phone>
-                                <Url>www.taxipadova.it</Url>
+                                <Url>https://www.taxipadova.it</Url>
                             </ContactDetails>
                             <OrganisationType>operator</OrganisationType>
-                            <Address id="IT:ITH36:Address:taxiCORAPA:1">
+                            <Address id="IT:ITH3:Address:taxiCORAPA:1">
                                 <CountryName>Italia</CountryName>
                                 <Street>Via Svizzera 6</Street>
                                 <Town>Padova</Town>
@@ -40,82 +43,48 @@
                         </Operator>
                     </organisations>
                 </ResourceFrame>
-				<SiteFrame id="epd:IT:ITH36:SiteFrame_EU_PI_STOP:ita" version="1">
-					<TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
-                    <!--- =======Posteggi Taxi======== -->					
+                <SiteFrame id="epd:IT:ITH3:SiteFrame_EU_PI_STOP:ita" version="1">
+                    <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
+                    <!--- =======Posteggi Taxi======== -->
                     <parkings>
-						<Parking id="IT:ITH36:Parking:taxiStandPadova:p:StazioneFS" version="1">
-							<Name>Parcheggio taxi Stazione FS</Name>
-							<ShortName>Stazione FS</ShortName>
-							<Centroid>
-								<Location>
-									<Longitude>11.880289529059162</Longitude>
-									<Latitude>45.41711967787191</Latitude>
-									<Precision>1</Precision>
-								</Location>
-							</Centroid>
-							<OperatorRef ref="IT:ITH36:Operator:taxiCORAPA:CORAPA" version="1"/>
-							<ParkingType>roadside</ParkingType>
-							<ParkingVehicleTypes>taxi</ParkingVehicleTypes>
-							<ParkingLayout>roadside</ParkingLayout>
-							<TotalCapacity>10</TotalCapacity>
-							<RechargingAvailable>false</RechargingAvailable>
-							<ParkingReservation>noReservations</ParkingReservation>
-						</Parking>
-						<Parking id="IT:ITH36:Parking:taxiStandPadova:p:OspedaleCivile" version="1">
-							<Name>Parcheggio taxi Ospedale Civile</Name>
-							<ShortName>Ospedale Civile</ShortName>
-							<Centroid>
-								<Location>
-									<Longitude>11.888481202890112</Longitude>
-									<Latitude>45.40310100416179</Latitude>
-									<Precision>1</Precision>
-								</Location>
-							</Centroid>
-							<OperatorRef ref="IT:ITH36:Operator:taxiCORAPA:CORAPA" version="1"/>
-							<ParkingType>roadside</ParkingType>
-							<ParkingVehicleTypes>taxi</ParkingVehicleTypes>
-							<ParkingLayout>roadside</ParkingLayout>
-							<TotalCapacity>5</TotalCapacity>
-							<RechargingAvailable>false</RechargingAvailable>
-							<ParkingReservation>noReservations</ParkingReservation>
-						</Parking>
-					</parkings>
-				</SiteFrame>
-            </frames>
-        </CompositeFrame>
-        <CompositeFrame id="epd:IT:ITH35:CompositeFrame_EU_PI_STOP_OFFER:FARE:TaxiVenezia:ita" version="1">
-            <ValidBetween>
-                <FromDate>2024-01-01T00:00:00.000+02:00</FromDate>
-                <ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
-            </ValidBetween>
-            <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
-            <!-- ======= FRAME DEFAULTS ======= -->
-            <frames>
-                <ResourceFrame id="epd:IT:ITH35:ResourceFrame_EU_PI_COMMON:ita:Taxi" version="1">
-                    <!--- =======Operatori======== -->
-                    <organisations>
-                        <Operator id="IT:ITH35:Operator:taxiRTVENEZIA:RTVENEZIA" version="1">
-                            <PrivateCode>RTVENEZIA</PrivateCode>
-                            <Name>Cooperativa Arigiana Radiotaxi Venezia</Name>
-                            <ShortName>RTVENEZIA</ShortName>
-                            <LegalName>Cooperativa Arigiana Radiotaxi Venezia Scarl</LegalName>
-                            <TradingName>RTVENEZIA</TradingName>
-                            <ContactDetails>
-                                <Email>info@radiotaxivenezia.com/</Email>
-                                <Phone>+39-041-5964</Phone>
-                                <Url>www.radiotaxivenezia.com</Url>
-                            </ContactDetails>
-                            <OrganisationType>operator</OrganisationType>
-                            <Address id="IT:ITH35:Operator:taxiRTVENEZIA:1">
-                                <CountryName>Italia</CountryName>
-                                <Street>Via Piave 208</Street>
-                                <Town>Mestre</Town>
-                                <PostCode>30171</PostCode>
-                            </Address>
-                        </Operator>
-                    </organisations>
-                </ResourceFrame>
+                        <Parking id="IT:ITH3:Parking:taxiStandPadova:p:StazioneFS" version="1">
+                            <Name>Parcheggio taxi Stazione FS</Name>
+                            <ShortName>Stazione FS</ShortName>
+                            <Centroid>
+                                <Location>
+                                    <Longitude>11.880289529059162</Longitude>
+                                    <Latitude>45.41711967787191</Latitude>
+                                    <Precision>1</Precision>
+                                </Location>
+                            </Centroid>
+                            <OperatorRef ref="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1"/>
+                            <ParkingType>roadside</ParkingType>
+                            <ParkingVehicleTypes>taxi</ParkingVehicleTypes>
+                            <ParkingLayout>roadside</ParkingLayout>
+                            <TotalCapacity>10</TotalCapacity>
+                            <RechargingAvailable>false</RechargingAvailable>
+                            <ParkingReservation>noReservations</ParkingReservation>
+                        </Parking>
+                        <Parking id="IT:ITH3:Parking:taxiStandPadova:p:OspedaleCivile" version="1">
+                            <Name>Parcheggio taxi Ospedale Civile</Name>
+                            <ShortName>Ospedale Civile</ShortName>
+                            <Centroid>
+                                <Location>
+                                    <Longitude>11.888481202890112</Longitude>
+                                    <Latitude>45.40310100416179</Latitude>
+                                    <Precision>1</Precision>
+                                </Location>
+                            </Centroid>
+                            <OperatorRef ref="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1"/>
+                            <ParkingType>roadside</ParkingType>
+                            <ParkingVehicleTypes>taxi</ParkingVehicleTypes>
+                            <ParkingLayout>roadside</ParkingLayout>
+                            <TotalCapacity>5</TotalCapacity>
+                            <RechargingAvailable>false</RechargingAvailable>
+                            <ParkingReservation>noReservations</ParkingReservation>
+                        </Parking>
+                    </parkings>
+                </SiteFrame>
             </frames>
         </CompositeFrame>
     </dataObjects>
