@@ -101,7 +101,9 @@
 			      <PrivateCode>10</PrivateCode>
 			      <Centroid>
 				<Location>
-				  <gml:pos srsName="ITA">45.412978082170596 11.890798198607353</gml:pos>
+				    <Longitude>11.890798198607353</Longitude>
+                                    <Latitude>45.412978082170596</Latitude>
+                                    <Precision>1</Precision>
 				</Location>
 			      </Centroid>
 			      <AccessModes>foot</AccessModes>
@@ -118,7 +120,6 @@
                                 <Location>
                                     <Longitude>11.880289529059162</Longitude>
                                     <Latitude>45.41711967787191</Latitude>
-                                    <gml:pos srsName="ITA">11.880289529059162 45.41711967787191</gml:pos>
                                     <Precision>1</Precision>
                                 </Location>
                             </Centroid>
@@ -134,7 +135,6 @@
                                         <Location>
                                             <Longitude>11.880289529059162</Longitude>
                                             <Latitude>45.41711967787191</Latitude>
-                                            <gml:pos srsName="ITA">11.880289529059162 45.41711967787191</gml:pos>
                                             <Precision>1</Precision>
                                         </Location>
                                     </Centroid>
@@ -150,7 +150,6 @@
                                 <Location>
                                     <Longitude>11.890635237077444</Longitude>
                                     <Latitude>45.44242806735719</Latitude>
-                                    <gml:pos srsName="ITA">11.890635237077444 45.44242806735719</gml:pos>
                                     <Precision>1</Precision>
                                 </Location>
                             </Centroid>
@@ -166,7 +165,6 @@
                                         <Location>
                                             <Longitude>11.890635237077444</Longitude>
                                             <Latitude>45.44242806735719</Latitude>
-                                            <gml:pos srsName="ITA">11.890635237077444 45.44242806735719</gml:pos>
                                             <Precision>1</Precision>
                                         </Location>
                                     </Centroid>
