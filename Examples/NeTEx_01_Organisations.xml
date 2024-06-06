@@ -14,10 +14,18 @@
                 <ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
             </ValidBetween>
             <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
-            <!-- ======= FRAME DEFAULTS ======= -->
-            <FrameDefaults>
-                <DefaultCodespaceRef ref="ita"/>
-            </FrameDefaults>
+			<!--- ======= CODESPACEs======== -->
+			<codespaces>
+				<Codespace id="ita">
+					<Xmlns>ita</Xmlns>
+					<XmlnsUrl>http://www.taxi.it</XmlnsUrl>
+					<Description>Italian Profile from Taxi</Description>
+				</Codespace>
+			</codespaces>
+			<!--- =======FRAME DEFAULTS======== -->
+			<FrameDefaults>
+				<DefaultCodespaceRef ref="ita"/>
+			</FrameDefaults>
             <frames>
                 <ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova:ita" version="1">
                     <!--- =======Operatori======== -->
