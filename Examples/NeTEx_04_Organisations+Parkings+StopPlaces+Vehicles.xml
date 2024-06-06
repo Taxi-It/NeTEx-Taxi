@@ -199,7 +199,25 @@
                     </parkings>
                     <!--- =======Aree Interscambio Taxi======== -->
                     <stopPlaces>
-                        <StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPASTAZIONE:26">
+                        <!--- =======Posteggio Taxi Esempio con StopPlace======== -->
+		    	<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPAFIERA:10">
+			      <Name>FIERA PADOVA</Name>
+			      <ShortName>FIERA</ShortName>
+			      <PrivateCode>10</PrivateCode>
+			      <Centroid>
+				<Location>
+				    <Longitude>11.890798198607353</Longitude>
+                                    <Latitude>45.412978082170596</Latitude>
+                                    <Precision>1</Precision>
+				</Location>
+			      </Centroid>
+			      <AccessModes>foot</AccessModes>
+			      <PublicCode>FIERA</PublicCode>
+			      <TransportMode>taxi</TransportMode>
+			      <StopPlaceType>taxiStand</StopPlaceType>
+			    </StopPlace>    
+			<!--- =======Posteggio Taxi Esempio Interscambio Stazione======== -->
+		    	<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPASTAZIONE:26">
                             <Name>STAZIONE FS</Name>
                             <ShortName>STAZIONE</ShortName>
                             <PrivateCode>26</PrivateCode>
@@ -207,7 +225,6 @@
                                 <Location>
                                     <Longitude>11.880289529059162</Longitude>
                                     <Latitude>45.41711967787191</Latitude>
-                                    <gml:pos srsName="ITA">11.880289529059162 45.41711967787191</gml:pos>
                                     <Precision>1</Precision>
                                 </Location>
                             </Centroid>
@@ -223,7 +240,6 @@
                                         <Location>
                                             <Longitude>11.880289529059162</Longitude>
                                             <Latitude>45.41711967787191</Latitude>
-                                            <gml:pos srsName="ITA">11.880289529059162 45.41711967787191</gml:pos>
                                             <Precision>1</Precision>
                                         </Location>
                                     </Centroid>
@@ -239,7 +255,6 @@
                                 <Location>
                                     <Longitude>11.890635237077444</Longitude>
                                     <Latitude>45.44242806735719</Latitude>
-                                    <gml:pos srsName="ITA">11.890635237077444 45.44242806735719</gml:pos>
                                     <Precision>1</Precision>
                                 </Location>
                             </Centroid>
@@ -255,7 +270,6 @@
                                         <Location>
                                             <Longitude>11.890635237077444</Longitude>
                                             <Latitude>45.44242806735719</Latitude>
-                                            <gml:pos srsName="ITA">11.890635237077444 45.44242806735719</gml:pos>
                                             <Precision>1</Precision>
                                         </Location>
                                     </Centroid>
