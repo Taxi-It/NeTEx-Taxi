@@ -1,180 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- NeTEX italian Profile | Taxi Organisations + Parkings + StopPlaces | Revisione 2024-06-5 -->
+<!-- NeTEX italian Profile | Taxi Organisations + Parkings + StopPlaces | Revisione 2024-07-09-->
 <!-- Realizzato da Taxi.it-->
 <!-- Fonte: https://github.com/5Tsrl/netex-italian-profile/blob/main/Examples/Netex_ITA_1.10_EPIP%2BLevel2%2BFare%2BAlternativeModes%2BAccessibility_with_versioning_final.xml -->
 <PublicationDelivery xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:siri="http://www.siri.org.uk/siri" version="1.0" xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex ../xsd/NeTEx_publication_Lev4.xsd">
-    <PublicationTimestamp>2024-01-01T12:00:00.000+02:00</PublicationTimestamp>
-    <ParticipantRef>RAP</ParticipantRef>
-    <Description>Esempio di profilo italiano del NeTEx con dati Taxi</Description>
-    <dataObjects>
-        <!-- Composite Frame Taxi ( Organisations ) -->
-        <CompositeFrame id="epd:IT:ITH3:CompositeFrame_EU_PI_STOP_OFFER:FARE:TaxiPadova:ita" version="1">
-            <ValidBetween>
-                <FromDate>2024-01-01T00:00:00.000+02:00</FromDate>
-                <ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
-            </ValidBetween>
-            <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
-		<!--- ======= CODESPACEs======== -->
-		<codespaces>
-			<Codespace id="ita">
-			  <Xmlns>ita</Xmlns>
-			  <XmlnsUrl>https://netex-cen.eu/implementation/italian-implementation/</XmlnsUrl>
-			  <Description>Italian Profile</Description>
-			</Codespace>
-		</codespaces>
-		<!--- =======FRAME DEFAULTS======== -->
-		<FrameDefaults>
-			<DefaultCodespaceRef ref="ita"/>
-		</FrameDefaults>
-            <frames>
-                <ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova:ita" version="1">
-                    <!--- =======Operatori======== -->
-                    <organisations>
-                        <Operator id="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1">
-                            <PrivateCode>CORAPA</PrivateCode>
-                            <Name>Cooperativa Radiotaxi Padova</Name>
-                            <ShortName>CORAPA</ShortName>
-                            <LegalName>Cooperativa Radiotaxi Padova Scarl</LegalName>
-                            <TradingName>CORAPA</TradingName>
-                            <ContactDetails>
-                                <Email>info@taxipadova.it</Email>
-                                <Phone>+39-049-651333</Phone>
-                                <Url>https://www.taxipadova.it</Url>
-                            </ContactDetails>
-                            <OrganisationType>operator</OrganisationType>
-                            <Address id="IT:ITH3:Address:taxiCORAPA:1">
-                                <CountryName>Italia</CountryName>
-                                <Street>Via Svizzera 6</Street>
-                                <Town>Padova</Town>
-                                <PostCode>35127</PostCode>
-                            </Address>
-                        </Operator>
-                    </organisations>
-                </ResourceFrame>
-                <SiteFrame id="epd:IT:ITH3:SiteFrame_EU_PI_STOP:ita" version="1">
-                    <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
-                    <!--- =======Posteggi Taxi======== -->
-                    <parkings>
-                        <Parking id="IT:ITH3:Parking:taxiStandPadova:p:StazioneFS" version="1">
-                            <Name>Parcheggio taxi Stazione FS</Name>
-                            <ShortName>Stazione FS</ShortName>
-                            <Centroid>
-                                <Location>
-                                    <Longitude>11.880289529059162</Longitude>
-                                    <Latitude>45.41711967787191</Latitude>
-                                    <Precision>1</Precision>
-                                </Location>
-                            </Centroid>
-                            <OperatorRef ref="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1"/>
-                            <ParkingType>roadside</ParkingType>
-                            <ParkingVehicleTypes>taxi</ParkingVehicleTypes>
-                            <ParkingLayout>roadside</ParkingLayout>
-                            <TotalCapacity>10</TotalCapacity>
-                            <RechargingAvailable>false</RechargingAvailable>
-                            <ParkingReservation>noReservations</ParkingReservation>
-                        </Parking>
-                        <Parking id="IT:ITH3:Parking:taxiStandPadova:p:OspedaleCivile" version="1">
-                            <Name>Parcheggio taxi Ospedale Civile</Name>
-                            <ShortName>Ospedale Civile</ShortName>
-                            <Centroid>
-                                <Location>
-                                    <Longitude>11.888481202890112</Longitude>
-                                    <Latitude>45.40310100416179</Latitude>
-                                    <Precision>1</Precision>
-                                </Location>
-                            </Centroid>
-                            <OperatorRef ref="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1"/>
-                            <ParkingType>roadside</ParkingType>
-                            <ParkingVehicleTypes>taxi</ParkingVehicleTypes>
-                            <ParkingLayout>roadside</ParkingLayout>
-                            <TotalCapacity>5</TotalCapacity>
-                            <RechargingAvailable>false</RechargingAvailable>
-                            <ParkingReservation>noReservations</ParkingReservation>
-                        </Parking>
-                    </parkings>
-                    <!--- =======Aree Interscambio Taxi======== -->
-                    <stopPlaces>
-                        <!--- =======Posteggio Taxi Esempio con StopPlace======== -->
-		    	<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPAFIERA:10">
-			      <Name>FIERA PADOVA</Name>
-			      <ShortName>FIERA</ShortName>
-			      <PrivateCode>10</PrivateCode>
-			      <Centroid>
-				<Location>
-				    <Longitude>11.890798198607353</Longitude>
-                                    <Latitude>45.412978082170596</Latitude>
-                                    <Precision>1</Precision>
-				</Location>
-			      </Centroid>
-			      <AccessModes>foot</AccessModes>
-			      <PublicCode>FIERA</PublicCode>
-			      <TransportMode>taxi</TransportMode>
-			      <StopPlaceType>taxiStand</StopPlaceType>
-			    </StopPlace>    
-			<!--- =======Posteggio Taxi Esempio Interscambio Stazione======== -->
-		    	<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPASTAZIONE:26">
-                            <Name>STAZIONE FS</Name>
-                            <ShortName>STAZIONE</ShortName>
-                            <PrivateCode>26</PrivateCode>
-                            <Centroid>
-                                <Location>
-                                    <Longitude>11.880289529059162</Longitude>
-                                    <Latitude>45.41711967787191</Latitude>
-                                    <Precision>1</Precision>
-                                </Location>
-                            </Centroid>
-                            <AccessModes>foot</AccessModes>
-                            <PublicCode>STAZIONE</PublicCode>
-                            <TransportMode>rail</TransportMode>
-                            <StopPlaceType>railStation</StopPlaceType>
-                            <quays>
-                                <Quay version="1" id="IT:ITH3:Quay:taxiCORAPASTAZIONE:26_1">
-                                    <Name>STAZIONE FS</Name>
-                                    <Description>Posteggio Taxi Stazione FS</Description>
-                                    <Centroid>
-                                        <Location>
-                                            <Longitude>11.880289529059162</Longitude>
-                                            <Latitude>45.41711967787191</Latitude>
-                                            <Precision>1</Precision>
-                                        </Location>
-                                    </Centroid>
-                                    <QuayType>taxiStand</QuayType>
-                                </Quay>
-                            </quays>
-                        </StopPlace>
-                        <StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPAPONTEVIGODARZERE:23">
-                            <Name>PONTEVIGODARZERE</Name>
-                            <ShortName>PONTEVIGODARZERE</ShortName>
-                            <PrivateCode>23</PrivateCode>
-                            <Centroid>
-                                <Location>
-                                    <Longitude>11.890635237077444</Longitude>
-                                    <Latitude>45.44242806735719</Latitude>
-                                    <Precision>1</Precision>
-                                </Location>
-                            </Centroid>
-                            <AccessModes>foot</AccessModes>
-                            <PublicCode>PONTEVIGODARZERE</PublicCode>
-                            <TransportMode>tram</TransportMode>
-                            <StopPlaceType>tramStation</StopPlaceType>
-                            <quays>
-                                <Quay version="1" id="IT:ITH3:Quay:taxiCORAPAPONTEVIGODARZERE:23_1">
-                                    <Name>PONTEVIGODARZERE</Name>
-                                    <Description>PONTEVIGODARZERE</Description>
-                                    <Centroid>
-                                        <Location>
-                                            <Longitude>11.890635237077444</Longitude>
-                                            <Latitude>45.44242806735719</Latitude>
-                                            <Precision>1</Precision>
-                                        </Location>
-                                    </Centroid>
-                                    <QuayType>taxiStand</QuayType>
-                                </Quay>
-                            </quays>
-                        </StopPlace>
-                    </stopPlaces>
-                </SiteFrame>
-            </frames>
-        </CompositeFrame>
-    </dataObjects>
+	<PublicationTimestamp>2024-01-01T12:00:00.000+02:00</PublicationTimestamp>
+	<ParticipantRef>RAP</ParticipantRef>
+	<Description>Esempio di profilo italiano del NeTEx con dati Taxi</Description>
+	<dataObjects>
+		<!-- Composite Frame Taxi ( Organisations ) -->
+		<CompositeFrame id="epd:IT:ITH3:CompositeFrame_EU_PI_STOP_OFFER:TaxiPadova" version="1">
+			<ValidBetween>
+				<FromDate>2024-01-01T00:00:00.000+02:00</FromDate>
+				<ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
+			</ValidBetween>
+			<TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
+			<!-- ======= FRAME DEFAULTS ======= -->
+			<frames>
+				<ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova" version="1">
+					<!--- ======= Operatori ======== -->
+					<organisations>
+						<Operator id="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1">
+							<PrivateCode>CORAPA</PrivateCode>
+							<Name>Cooperativa Radiotaxi Padova</Name>
+							<ShortName>CORAPA</ShortName>
+							<LegalName>Cooperativa Radiotaxi Padova Scarl</LegalName>
+							<TradingName>CORAPA</TradingName>
+							<ContactDetails>
+								<Email>info@taxipadova.it</Email>
+								<Phone>+39-049-651333</Phone>
+								<Url>www.taxipadova.it</Url>
+							</ContactDetails>
+							<OrganisationType>operator</OrganisationType>
+							<Address id="IT:ITH3:Address:taxiCORAPA">
+								<CountryName>Italia</CountryName>
+								<Street>Via Svizzera 6</Street>
+								<Town>Padova</Town>
+								<PostCode>35127</PostCode>
+							</Address>
+						</Operator>
+					</organisations>
+				</ResourceFrame>
+				<SiteFrame id="epd:IT:ITH3:SiteFrame-EU_PI_STOP:ita" version="1">
+					<TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
+					<!--- ======= Aree Interscambio Taxi ======== -->
+					<stopPlaces>                    
+						<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPASTAZIONE:26">
+							<Name>STAZIONE FS</Name>
+							<ShortName>STAZIONE</ShortName>
+							<PrivateCode>26</PrivateCode>
+							<Centroid>
+								<Location>
+									<Longitude>11.880289529059162</Longitude>
+									<Latitude>45.41711967787191</Latitude>
+									<gml:pos srsName="ITA">11.880289529059162 45.41711967787191</gml:pos>
+									<Precision>1</Precision>
+								</Location>
+							</Centroid>
+							<AccessModes>foot</AccessModes>
+							<PublicCode>STAZIONE</PublicCode>
+							<TransportMode>rail</TransportMode>
+							<StopPlaceType>railStation</StopPlaceType>
+							<quays>
+								<Quay version="1" id="IT:ITH3:Quay:taxiCORAPASTAZIONE:26_1">
+									<Name>STAZIONE FS</Name>
+									<Description>Posteggio Taxi Stazione FS</Description>
+									<Centroid>
+										<Location>
+											<Longitude>11.880289529059162</Longitude>
+											<Latitude>45.41711967787191</Latitude>
+											<gml:pos srsName="ITA">11.880289529059162 45.41711967787191</gml:pos>
+											<Precision>1</Precision>
+										</Location>
+									</Centroid>
+									<QuayType>taxiStand</QuayType>
+								</Quay>
+							</quays>
+						</StopPlace>
+						<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPAPONTEVIGODARZERE:23">
+							<Name>PONTEVIGODARZERE</Name>
+							<ShortName>PONTEVIGODARZERE</ShortName>
+							<PrivateCode>23</PrivateCode>
+							<Centroid>
+								<Location>
+									<Longitude>11.890635237077444</Longitude>
+									<Latitude>45.44242806735719</Latitude>
+									<gml:pos srsName="ITA">11.890635237077444 45.44242806735719</gml:pos>
+									<Precision>1</Precision>
+								</Location>
+							</Centroid>
+							<AccessModes>foot</AccessModes>
+							<PublicCode>PONTEVIGODARZERE</PublicCode>
+							<TransportMode>tram</TransportMode>
+							<StopPlaceType>tramStation</StopPlaceType>
+							<quays>
+								<Quay version="1" id="IT:ITH3:Quay:taxiCORAPAPONTEVIGODARZERE:23_1">
+									<Name>PONTEVIGODARZERE</Name>
+									<Description>PONTEVIGODARZERE</Description>
+									<Centroid>
+										<Location>
+											<Longitude>11.890635237077444</Longitude>
+											<Latitude>45.44242806735719</Latitude>
+											<gml:pos srsName="ITA">11.890635237077444 45.44242806735719</gml:pos>
+											<Precision>1</Precision>
+										</Location>
+									</Centroid>
+									<QuayType>taxiStand</QuayType>
+								</Quay>
+							</quays>
+						</StopPlace>
+					</stopPlaces>
+					<!--- ======= Posteggi Taxi ======== -->					
+					<parkings>
+						<Parking id="IT:ITH3:Parking:taxiStandPadova:p:StazioneFS" version="1">
+							<Name>Parcheggio taxi Stazione FS</Name>
+							<ShortName>Stazione FS</ShortName>
+							<Centroid>
+								<Location>
+									<Longitude>11.880289529059162</Longitude>
+									<Latitude>45.41711967787191</Latitude>
+									<Precision>1</Precision>
+								</Location>
+							</Centroid>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+							<ParkingType>roadside</ParkingType>
+							<ParkingVehicleTypes>taxi</ParkingVehicleTypes>
+							<ParkingLayout>roadside</ParkingLayout>
+							<TotalCapacity>10</TotalCapacity>
+							<RechargingAvailable>false</RechargingAvailable>
+							<ParkingReservation>noReservations</ParkingReservation>
+						</Parking>
+						<Parking id="IT:ITH3:Parking:taxiStandPadova:p:OspedaleCivile" version="1">
+							<Name>Parcheggio taxi Ospedale Civile</Name>
+							<ShortName>Ospedale Civile</ShortName>
+							<Centroid>
+								<Location>
+									<Longitude>11.888481202890112</Longitude>
+									<Latitude>45.40310100416179</Latitude>
+									<Precision>1</Precision>
+								</Location>
+							</Centroid>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+							<ParkingType>roadside</ParkingType>
+							<ParkingVehicleTypes>taxi</ParkingVehicleTypes>
+							<ParkingLayout>roadside</ParkingLayout>
+							<TotalCapacity>5</TotalCapacity>
+							<RechargingAvailable>false</RechargingAvailable>
+							<ParkingReservation>noReservations</ParkingReservation>
+						</Parking>
+					</parkings>
+				</SiteFrame>
+			</frames>
+		</CompositeFrame>
+	</dataObjects>
 </PublicationDelivery>
