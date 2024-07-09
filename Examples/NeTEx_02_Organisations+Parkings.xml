@@ -1,60 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- NeTEX italian Profile | Taxi Organisations + Parkings | Revisione 2024-06-05 -->
-<!-- Realizzato da Taxi.it-->
 <!-- Fonte: https://github.com/5Tsrl/netex-italian-profile/blob/main/Examples/Netex_ITA_1.10_EPIP%2BLevel2%2BFare%2BAlternativeModes%2BAccessibility_with_versioning_final.xml -->
 <PublicationDelivery xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:siri="http://www.siri.org.uk/siri" version="1.0" xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex ../xsd/NeTEx_publication_Lev4.xsd">
-    <PublicationTimestamp>2024-01-01T12:00:00.000+02:00</PublicationTimestamp>
-    <ParticipantRef>RAP</ParticipantRef>
-    <Description>Esempio di profilo italiano del NeTEx con dati Taxi</Description>
-    <dataObjects>
-        <!-- Composite Frame Taxi ( Organisations ) -->
-        <CompositeFrame id="epd:IT:ITH3:CompositeFrame_EU_PI_STOP_OFFER:FARE:TaxiPadova:ita" version="1">
-            <ValidBetween>
-                <FromDate>2024-01-01T00:00:00.000+02:00</FromDate>
-                <ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
-            </ValidBetween>
-            <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
-		<!--- ======= CODESPACEs======== -->
-		<codespaces>
-			<Codespace id="ita">
-			  <Xmlns>ita</Xmlns>
-			  <XmlnsUrl>https://netex-cen.eu/implementation/italian-implementation/</XmlnsUrl>
-			  <Description>Italian Profile</Description>
-			</Codespace>
-		</codespaces>
-		<!--- =======FRAME DEFAULTS======== -->
-		<FrameDefaults>
-			<DefaultCodespaceRef ref="ita"/>
-		</FrameDefaults>
-            <frames>
-                <ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova:ita" version="1">
-                    <!--- =======Operatori======== -->
-                    <organisations>
-                        <Operator id="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1">
-                            <PrivateCode>CORAPA</PrivateCode>
-                            <Name>Cooperativa Radiotaxi Padova</Name>
-                            <ShortName>CORAPA</ShortName>
-                            <LegalName>Cooperativa Radiotaxi Padova Scarl</LegalName>
-                            <TradingName>CORAPA</TradingName>
-                            <ContactDetails>
-                                <Email>info@taxipadova.it</Email>
-                                <Phone>+39-049-651333</Phone>
-                                <Url>https://www.taxipadova.it</Url>
-                            </ContactDetails>
-                            <OrganisationType>operator</OrganisationType>
-                            <Address id="IT:ITH3:Address:taxiCORAPA:1">
-                                <CountryName>Italia</CountryName>
-                                <Street>Via Svizzera 6</Street>
-                                <Town>Padova</Town>
-                                <PostCode>35127</PostCode>
-                            </Address>
-                        </Operator>
-                    </organisations>
-                </ResourceFrame>
-                <SiteFrame id="epd:IT:ITH3:SiteFrame_EU_PI_STOP:ita" version="1">
-                    <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
-                    <!--- =======Posteggi Taxi======== -->
-                    <parkings>
+	<PublicationTimestamp>2024-01-01T12:00:00.000+02:00</PublicationTimestamp>
+	<ParticipantRef>RAP</ParticipantRef>
+	<Description>Esempio di profilo italiano del NeTEx con dati Taxi</Description>
+	<dataObjects>
+		<!-- Composite Frame Taxi ( Organisations ) -->
+		<CompositeFrame id="epd:IT:ITH3:CompositeFrame_EU_PI_STOP_OFFER:TaxiPadova" version="1">
+			<ValidBetween>
+				<FromDate>2024-01-01T00:00:00.000+02:00</FromDate>
+				<ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
+			</ValidBetween>
+			<TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
+			<!-- ======= FRAME DEFAULTS ======= -->
+			<frames>
+				<ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova" version="1">
+					<!--- ======= Operatori ======== -->
+					<organisations>
+						<Operator id="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1">
+							<PrivateCode>CORAPA</PrivateCode>
+							<Name>Cooperativa Radiotaxi Padova</Name>
+							<ShortName>CORAPA</ShortName>
+							<LegalName>Cooperativa Radiotaxi Padova Scarl</LegalName>
+							<TradingName>CORAPA</TradingName>
+							<ContactDetails>
+								<Email>info@taxipadova.it</Email>
+								<Phone>+39-049-651333</Phone>
+								<Url>www.taxipadova.it</Url>
+							</ContactDetails>
+							<OrganisationType>operator</OrganisationType>
+							<Address id="IT:ITH3:Address:taxiCORAPA">
+								<CountryName>Italia</CountryName>
+								<Street>Via Svizzera 6</Street>
+								<Town>Padova</Town>
+								<PostCode>35127</PostCode>
+							</Address>
+						</Operator>
+					</organisations>
+				</ResourceFrame>
+				<SiteFrame id="epd:IT:ITH3:SiteFrame_EU_PI_STOP:ita" version="1">
+					<TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
+					<!--- =======Posteggi Taxi======== -->
+					<parkings>
                         <Parking id="IT:ITH3:Parking:taxiStandPadova:p:StazioneFS" version="1">
                             <Name>Parcheggio taxi Stazione FS</Name>
                             <ShortName>Stazione FS</ShortName>
