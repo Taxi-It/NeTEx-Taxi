@@ -18,7 +18,7 @@
 			<frames>
 				<!--- =======prevedere il ServiceFrame con le tariffZones nel caso in cui serva definire per le tariffe delle aree specifiche di tariffazione (se non è possibile utilizzare la matrice O/D)======== -->
 				<ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova" version="1">
-					<!--- =======Operatori======== -->
+					<!--- ======= Operatori ======== -->
 					<organisations>
 						<Operator id="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1">
 							<PrivateCode>CORAPA</PrivateCode>
