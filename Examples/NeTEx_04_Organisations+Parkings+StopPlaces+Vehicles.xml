@@ -14,21 +14,21 @@
                 <ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
             </ValidBetween>
             <TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
-		<!--- ======= CODESPACEs======== -->
-		<codespaces>
-			<Codespace id="ita">
-			  <Xmlns>ita</Xmlns>
-			  <XmlnsUrl>https://netex-cen.eu/implementation/italian-implementation/</XmlnsUrl>
-			  <Description>Italian Profile</Description>
-			</Codespace>
-		</codespaces>
-		<!--- =======FRAME DEFAULTS======== -->
-		<FrameDefaults>
-			<DefaultCodespaceRef ref="ita"/>
-		</FrameDefaults>
+        <!--- ======= CODESPACEs======== -->
+        <codespaces>
+            <Codespace id="ita">
+            <Xmlns>ita</Xmlns>
+            <XmlnsUrl>https://netex-cen.eu/implementation/italian-implementation/</XmlnsUrl>
+            <Description>Italian Profile</Description>
+            </Codespace>
+        </codespaces>
+        <!--- ======= FRAME DEFAULTS ======== -->
+        <FrameDefaults>
+            <DefaultCodespaceRef ref="ita"/>
+        </FrameDefaults>
             <frames>
                 <ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova:ita" version="1">
-                    <!--- =======Operatori======== -->
+                    <!--- ======= Operatori ======== -->
                     <organisations>
                         <Operator id="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1">
                             <PrivateCode>CORAPA</PrivateCode>
@@ -50,9 +50,9 @@
                             </Address>
                         </Operator>
                     </organisations>
-                    <!--- =======Tipi di Veicolo======== -->
+                    <!--- ======= Tipi di Veicolo ======== -->
                     <vehicleTypes>
-                        <!--- =======Veicolo 4 Posti======== -->
+                        <!--- ======= Veicolo 4 Posti ======== -->
                         <VehicleType id="IT:ITH3:VehicleType:taxiCORAPA:04" version="1">
                             <ValidBetween>
                                 <FromDate>2021-01-01T00:00:00+02:00</FromDate>
@@ -72,7 +72,7 @@
                             <HasLiftOrRamp>false</HasLiftOrRamp>
                             <Length>4</Length>
                         </VehicleType>
-                        <!--- =======Veicolo 6 Posti======== -->
+                        <!--- ======= Veicolo 6 Posti ======== -->
                         <VehicleType id="IT:ITH3:VehicleType:taxiCORAPA:06" version="1">
                             <ValidBetween>
                                 <FromDate>2021-01-01T00:00:00+02:00</FromDate>
@@ -92,7 +92,7 @@
                             <HasLiftOrRamp>false</HasLiftOrRamp>
                             <Length>4</Length>
                         </VehicleType>
-                        <!--- =======Veicolo Trasporto Carrozzine======== -->
+                        <!--- ======= Veicolo Trasporto Carrozzine ======== -->
                         <VehicleType id="IT:ITH3:VehicleType:taxiCORAPA:CAR" version="1">
                             <ValidBetween>
                                 <FromDate>2021-01-01T00:00:00+02:00</FromDate>
@@ -113,7 +113,7 @@
                             <Length>4</Length>
                         </VehicleType>
                     </vehicleTypes>
-                    <!--- =======Modelli di Veicolo======== -->
+                    <!--- ======= Modelli di Veicolo ======== -->
                     <vehicleModels>
                         <VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA:ToyotaPrius" version="1">
                             <ValidBetween>
@@ -126,7 +126,7 @@
                             <VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA:06" version="1"/>
                         </VehicleModel>
                     </vehicleModels>
-                    <!--- =======Veicoli======== -->
+                    <!--- ======= Veicoli ======== -->
                     <vehicles>
                         <Vehicle id="IT:ITH3:Vehicle:taxiCORAPA:CO07" version="1">
                             <ValidBetween>
@@ -158,7 +158,7 @@
                 </ResourceFrame>
                 <SiteFrame id="epd:IT:ITH3:SiteFrame_EU_PI_STOP:ita" version="1">
                     <TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
-                    <!--- =======Posteggi Taxi======== -->
+                    <!--- ======= Posteggi Taxi ======== -->
                     <parkings>
                         <Parking id="IT:ITH3:Parking:taxiStandPadova:p:StazioneFS" version="1">
                             <Name>Parcheggio taxi Stazione FS</Name>
@@ -197,27 +197,27 @@
                             <ParkingReservation>noReservations</ParkingReservation>
                         </Parking>
                     </parkings>
-                    <!--- =======Aree Interscambio Taxi======== -->
+                    <!--- ======= Aree Interscambio Taxi ======== -->
                     <stopPlaces>
-                        <!--- =======Posteggio Taxi Esempio con StopPlace======== -->
-		    	<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPAFIERA:10">
-			      <Name>FIERA PADOVA</Name>
-			      <ShortName>FIERA</ShortName>
-			      <PrivateCode>10</PrivateCode>
-			      <Centroid>
-				<Location>
-				    <Longitude>11.890798198607353</Longitude>
-                                    <Latitude>45.412978082170596</Latitude>
-                                    <Precision>1</Precision>
-				</Location>
-			      </Centroid>
-			      <AccessModes>foot</AccessModes>
-			      <PublicCode>FIERA</PublicCode>
-			      <TransportMode>taxi</TransportMode>
-			      <StopPlaceType>taxiStand</StopPlaceType>
-			    </StopPlace>    
-			<!--- =======Posteggio Taxi Esempio Interscambio Stazione======== -->
-		    	<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPASTAZIONE:26">
+                        <!--- ======= Posteggio Taxi Esempio con StopPlace ======== -->
+                        <StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPAFIERA:10">
+                            <Name>FIERA PADOVA</Name>
+                            <ShortName>FIERA</ShortName>
+                            <PrivateCode>10</PrivateCode>
+                            <Centroid>
+                            <Location>
+                                <Longitude>11.890798198607353</Longitude>
+                                                <Latitude>45.412978082170596</Latitude>
+                                                <Precision>1</Precision>
+                            </Location>
+                            </Centroid>
+                            <AccessModes>foot</AccessModes>
+                            <PublicCode>FIERA</PublicCode>
+                            <TransportMode>taxi</TransportMode>
+                            <StopPlaceType>taxiStand</StopPlaceType>
+                        </StopPlace>    
+                        <!--- =======Posteggio Taxi Esempio Interscambio Stazione======== -->
+                        <StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPASTAZIONE:26">
                             <Name>STAZIONE FS</Name>
                             <ShortName>STAZIONE</ShortName>
                             <PrivateCode>26</PrivateCode>
