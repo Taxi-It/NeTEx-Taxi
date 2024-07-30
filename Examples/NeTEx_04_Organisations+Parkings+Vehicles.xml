@@ -39,17 +39,19 @@
 							</Address>
 						</Operator>
 					</organisations>
-				<!--- ======= Tipi di Veicolo ======== -->
-				<vehicleTypes>
-						<!--- ======= Veicolo 4 Posti ======== -->
-						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA:04" version="1">
+					<!--- ======= Tipi di Veicolo ======== -->
+					<vehicleTypes>
+						<!--- ======= Veicolo COMO7 ======== -->
+						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA_CO07" version="1">
 							<ValidBetween>
 								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
 							</ValidBetween>
-							<PrivateCode>004</PrivateCode>
+							<FuelType>electricity</FuelType>
+							<EuroClass>Euro6</EuroClass>
+							<PrivateCode>56</PrivateCode>
 							<capacities>
-								<PassengerCapacity>
+								<PassengerCapacity id="IT:ITH3:PassengerCapacity:taxiCORAPA_CO07">
 									<TotalCapacity>5</TotalCapacity>
 									<SeatingCapacity>4</SeatingCapacity>
 									<StandingCapacity>0</StandingCapacity>
@@ -61,15 +63,17 @@
 							<HasLiftOrRamp>false</HasLiftOrRamp>
 							<Length>4</Length>
 						</VehicleType>
-						<!--- ======= Veicolo 6 Posti ======== -->
-						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA:06" version="1">
+						<!--- ======= Veicolo COMO8 ======== -->
+						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1">
 							<ValidBetween>
 								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
 							</ValidBetween>
-							<PrivateCode>006</PrivateCode>
+							<FuelType>petrolBatteryHybrid</FuelType>
+							<EuroClass>Euro6</EuroClass>
+							<PrivateCode>57</PrivateCode>
 							<capacities>
-								<PassengerCapacity>
+								<PassengerCapacity id="IT:ITH3:PassengerCapacity:taxiCORAPA_CO08">
 									<TotalCapacity>7</TotalCapacity>
 									<SeatingCapacity>6</SeatingCapacity>
 									<StandingCapacity>0</StandingCapacity>
@@ -81,30 +85,42 @@
 							<HasLiftOrRamp>false</HasLiftOrRamp>
 							<Length>4</Length>
 						</VehicleType>
-						<!--- ======= Veicolo Trasporto Carrozzine ======== -->
-						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA:CAR" version="1">
+						<!--- ======= Veicolo BARI25 Trasporto carrozzine ======== -->
+						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1">
 							<ValidBetween>
 								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
 							</ValidBetween>
-							<PrivateCode>Wheelchair</PrivateCode>
+							<FuelType>diesel</FuelType>
+							<EuroClass>Euro6</EuroClass>
+							<PrivateCode>158</PrivateCode>
 							<capacities>
-								<PassengerCapacity>
+								<PassengerCapacity id="IT:ITH3:PassengerCapacity:taxiCORAPA_BA25">
 									<TotalCapacity>5</TotalCapacity>
 									<SeatingCapacity>4</SeatingCapacity>
 									<StandingCapacity>0</StandingCapacity>
 									<SpecialPlaceCapacity>0</SpecialPlaceCapacity>
-									<WheelchairPlaceCapacity>1</WheelchairPlaceCapacity>
+									<WheelchairPlaceCapacity>1</WheelchairPlaceCapacity> <!--- ======= Trasporto carrozzine ======== -->
 								</PassengerCapacity>
 							</capacities>
 							<LowFloor>false</LowFloor>
-							<HasLiftOrRamp>true</HasLiftOrRamp>
+							<HasLiftOrRamp>true</HasLiftOrRamp> <!--- ======= Trasporto carrozzine ======== -->
 							<Length>4</Length>
 						</VehicleType>
 					</vehicleTypes>
 					<!--- ======= Modelli di Veicolo ======== -->
 					<vehicleModels>
-						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA:ToyotaPrius" version="1">
+						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA:TeslaModelC" version="1">
+							<ValidBetween>
+								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
+								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
+							</ValidBetween>
+							<Name>Tesla Model C</Name>
+							<Description>Taxi Tesla Model C</Description>
+							<Manufacturer>Tesla</Manufacturer>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO07" version="1"/>
+						</VehicleModel>
+						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA:PriusPlus" version="1">
 							<ValidBetween>
 								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
@@ -112,12 +128,22 @@
 							<Name>Prius Plus</Name>
 							<Description>Taxi Toyota Prius Plus</Description>
 							<Manufacturer>Toyota</Manufacturer>
-							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA:06" version="1"/>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1"/>
+						</VehicleModel>
+						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA:Caddy" version="1">
+							<ValidBetween>
+								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
+								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
+							</ValidBetween>
+							<Name>Caddy</Name>
+							<Description>Taxi Volkswagen Caddy</Description>
+							<Manufacturer>Volkswagen</Manufacturer>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1"/>
 						</VehicleModel>
 					</vehicleModels>
 					<!--- ======= Veicoli ======== -->
 					<vehicles>
-						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA:CO07" version="1">
+						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_CO07" version="1">
 							<ValidBetween>
 								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
@@ -127,10 +153,10 @@
 							<RegistrationNumber>ZZ321ZZ</RegistrationNumber>
 							<OperationalNumber>ZZZZZZZZZZZZZZZZ1</OperationalNumber>
 							<PrivateCode>111</PrivateCode>
-							<OperatorRef ref="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1"/>
-							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA:04" version="1"/>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO07" version="1"/>
 						</Vehicle>
-						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA:CO08" version="1">
+						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_CO08" version="1">
 							<ValidBetween>
 								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
@@ -140,14 +166,47 @@
 							<RegistrationNumber>ZZ123ZZ</RegistrationNumber>
 							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber>
 							<PrivateCode>25</PrivateCode>
-							<OperatorRef ref="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1"/>
-							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA:06" version="1"/>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1"/>
+						</Vehicle>
+						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_BA25" version="1">
+							<ValidBetween>
+								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
+								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
+							</ValidBetween>
+							<Name>Taxi COMO08</Name>
+							<ShortName>CO08</ShortName>
+							<RegistrationNumber>ZZ123ZZ</RegistrationNumber>
+							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber>
+							<PrivateCode>25</PrivateCode>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1"/>
 						</Vehicle>
 					</vehicles>
+					<!--- ======= Aggiunta Almaviva Liv.4 NeTEx ======== -->
+                    <vehicleModelProfiles> <!--- ======= Servizi alternativi al trasporto pubblico, ma il taxi è complementare ======== -->
+						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_CO07" version="1">
+							<ChildSeat>none</ChildSeat> <!--- ======= Non disponibile ======== -->
+							<Seats>4</Seats>
+							<Doors>5</Doors> <!--- ======= Non disponibile ======== -->
+							<Transmission>automatic</Transmission> 
+							<CruiseControl>true</CruiseControl> <!--- ======= Non disponibile ======== -->
+							<SatNav>true</SatNav> <!--- ======= Non disponibile ======== -->
+							<AirConditioning>true</AirConditioning>
+							<Convertible>false</Convertible> <!--- ======= Non disponibile ======== -->
+							<UsbPowerSockets>true</UsbPowerSockets> <!--- ======= Non disponibile ======== -->
+							<WinterTyres>false</WinterTyres> <!--- ======= Non disponibile ======== -->
+							<Chains>true</Chains> <!--- ======= Non disponibile ======== -->
+							<TrailerHitch>true</TrailerHitch> <!--- ======= Non disponibile ======== -->
+							<RoofRack>true</RoofRack> <!--- ======= Non disponibile ======== -->
+							<CycleRack>false</CycleRack> <!--- ======= Non disponibile ======== -->
+							<SkiRack>false</SkiRack> <!--- ======= Non disponibile ======== -->
+						</CarModelProfile>
+					</vehicleModelProfiles>
 				</ResourceFrame>
-				<SiteFrame id="epd:IT:ITH3:SiteFrame_EU_PI_STOP:ita" version="1">
+				<SiteFrame id="epd:IT:ITH3:SiteFrame-EU_PI_STOP:ita" version="1">
 					<TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
-					<!--- ======= Posteggi Taxi ======== -->
+					<!--- ======= Posteggi Taxi ======== -->					
 					<parkings>
 						<Parking id="IT:ITH3:Parking:taxiStandPadova:p:StazioneFS" version="1">
 							<Name>Parcheggio taxi Stazione FS</Name>
@@ -159,7 +218,7 @@
 									<Precision>1</Precision>
 								</Location>
 							</Centroid>
-							<OperatorRef ref="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1"/>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
 							<ParkingType>roadside</ParkingType>
 							<ParkingVehicleTypes>taxi</ParkingVehicleTypes>
 							<ParkingLayout>roadside</ParkingLayout>
@@ -177,7 +236,7 @@
 									<Precision>1</Precision>
 								</Location>
 							</Centroid>
-							<OperatorRef ref="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1"/>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
 							<ParkingType>roadside</ParkingType>
 							<ParkingVehicleTypes>taxi</ParkingVehicleTypes>
 							<ParkingLayout>roadside</ParkingLayout>
@@ -186,87 +245,6 @@
 							<ParkingReservation>noReservations</ParkingReservation>
 						</Parking>
 					</parkings>
-					<!--- ======= Aree Interscambio Taxi ======== -->
-					<stopPlaces>
-						<!--- ======= Posteggio Taxi Esempio con StopPlace ======== -->
-						<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPAFIERA:10">
-							<Name>FIERA PADOVA</Name>
-							<ShortName>FIERA</ShortName>
-							<PrivateCode>10</PrivateCode>
-							<Centroid>
-							<Location>
-								<Longitude>11.890798198607353</Longitude>
-												<Latitude>45.412978082170596</Latitude>
-												<Precision>1</Precision>
-							</Location>
-							</Centroid>
-							<AccessModes>foot</AccessModes>
-							<PublicCode>FIERA</PublicCode>
-							<TransportMode>taxi</TransportMode>
-							<StopPlaceType>taxiStand</StopPlaceType>
-						</StopPlace>    
-						<!--- =======Posteggio Taxi Esempio Interscambio Stazione======== -->
-						<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPASTAZIONE:26">
-							<Name>STAZIONE FS</Name>
-							<ShortName>STAZIONE</ShortName>
-							<PrivateCode>26</PrivateCode>
-							<Centroid>
-								<Location>
-									<Longitude>11.880289529059162</Longitude>
-									<Latitude>45.41711967787191</Latitude>
-									<Precision>1</Precision>
-								</Location>
-							</Centroid>
-							<AccessModes>foot</AccessModes>
-							<PublicCode>STAZIONE</PublicCode>
-							<TransportMode>rail</TransportMode>
-							<StopPlaceType>railStation</StopPlaceType>
-							<quays>
-								<Quay version="1" id="IT:ITH3:Quay:taxiCORAPASTAZIONE:26_1">
-									<Name>STAZIONE FS</Name>
-									<Description>Posteggio Taxi Stazione FS</Description>
-									<Centroid>
-										<Location>
-											<Longitude>11.880289529059162</Longitude>
-											<Latitude>45.41711967787191</Latitude>
-											<Precision>1</Precision>
-										</Location>
-									</Centroid>
-									<QuayType>taxiStand</QuayType>
-								</Quay>
-							</quays>
-						</StopPlace>
-						<StopPlace version="1" id="IT:ITH3:StopPlace:taxiCORAPAPONTEVIGODARZERE:23">
-							<Name>PONTEVIGODARZERE</Name>
-							<ShortName>PONTEVIGODARZERE</ShortName>
-							<PrivateCode>23</PrivateCode>
-							<Centroid>
-								<Location>
-									<Longitude>11.890635237077444</Longitude>
-									<Latitude>45.44242806735719</Latitude>
-									<Precision>1</Precision>
-								</Location>
-							</Centroid>
-							<AccessModes>foot</AccessModes>
-							<PublicCode>PONTEVIGODARZERE</PublicCode>
-							<TransportMode>tram</TransportMode>
-							<StopPlaceType>tramStation</StopPlaceType>
-							<quays>
-								<Quay version="1" id="IT:ITH3:Quay:taxiCORAPAPONTEVIGODARZERE:23_1">
-									<Name>PONTEVIGODARZERE</Name>
-									<Description>PONTEVIGODARZERE</Description>
-									<Centroid>
-										<Location>
-											<Longitude>11.890635237077444</Longitude>
-											<Latitude>45.44242806735719</Latitude>
-											<Precision>1</Precision>
-										</Location>
-									</Centroid>
-									<QuayType>taxiStand</QuayType>
-								</Quay>
-							</quays>
-						</StopPlace>
-					</stopPlaces>
 				</SiteFrame>
 			</frames>
 		</CompositeFrame>
