@@ -141,48 +141,6 @@
 							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1"/>
 						</VehicleModel>
 					</vehicleModels>
-					<!--- ======= Veicoli ======== -->
-					<vehicles>
-						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_CO07" version="1">
-							<ValidBetween>
-								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
-								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
-							</ValidBetween>
-							<Name>Taxi COMO07</Name>
-							<ShortName>CO07</ShortName>
-							<RegistrationNumber>ZZ321ZZ</RegistrationNumber>
-							<OperationalNumber>ZZZZZZZZZZZZZZZZ1</OperationalNumber>
-							<PrivateCode>111</PrivateCode>
-							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
-							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO07" version="1"/>
-						</Vehicle>
-						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_CO08" version="1">
-							<ValidBetween>
-								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
-								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
-							</ValidBetween>
-							<Name>Taxi COMO08</Name>
-							<ShortName>CO08</ShortName>
-							<RegistrationNumber>ZZ123ZZ</RegistrationNumber>
-							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber>
-							<PrivateCode>25</PrivateCode>
-							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
-							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1"/>
-						</Vehicle>
-						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_BA25" version="1">
-							<ValidBetween>
-								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
-								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
-							</ValidBetween>
-							<Name>Taxi COMO08</Name>
-							<ShortName>CO08</ShortName>
-							<RegistrationNumber>ZZ123ZZ</RegistrationNumber>
-							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber>
-							<PrivateCode>25</PrivateCode>
-							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
-							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1"/>
-						</Vehicle>
-					</vehicles>
 					<!--- ======= Aggiunta Almaviva Liv.4 NeTEx ======== -->
                     <vehicleModelProfiles> <!--- ======= Servizi alternativi al trasporto pubblico, ma il taxi è complementare ======== -->
 						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_CO07" version="1">
@@ -202,7 +160,66 @@
 							<CycleRack>false</CycleRack> <!--- ======= Non disponibile ======== -->
 							<SkiRack>false</SkiRack> <!--- ======= Non disponibile ======== -->
 						</CarModelProfile>
+						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_CO08" version="1">
+							<ChildSeat>none</ChildSeat> <!--- ======= Non disponibile ======== -->
+							<Seats>4</Seats>
+							<Doors>5</Doors> <!--- ======= Non disponibile ======== -->
+							<Transmission>automatic</Transmission> 
+							<AirConditioning>true</AirConditioning>
+						</CarModelProfile>
+						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_BA25" version="1">
+							<ChildSeat>none</ChildSeat> <!--- ======= Non disponibile ======== -->
+							<Seats>4</Seats>
+							<Doors>5</Doors> <!--- ======= Non disponibile ======== -->
+							<Transmission>automatic</Transmission> 
+							<AirConditioning>true</AirConditioning>
+						</CarModelProfile>
 					</vehicleModelProfiles>
+					<!--- ======= Veicoli ======== -->
+					<vehicles>
+						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_CO07" version="1">
+							<ValidBetween>
+								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
+								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
+							</ValidBetween>
+							<Name>Taxi COMO07</Name>
+							<ShortName>CO07</ShortName>
+							<RegistrationNumber>ZZ321ZZ</RegistrationNumber>
+							<OperationalNumber>ZZZZZZZZZZZZZZZZ1</OperationalNumber>
+							<PrivateCode>111</PrivateCode>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO07" version="1"/>
+							<CarModelProfileRef ref="IT:ITH3:CarModelProfile:taxiCORAPA_CO07" versionRef="1"/>
+						</Vehicle>
+						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_CO08" version="1">
+							<ValidBetween>
+								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
+								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
+							</ValidBetween>
+							<Name>Taxi COMO08</Name>
+							<ShortName>CO08</ShortName>
+							<RegistrationNumber>ZZ123ZZ</RegistrationNumber>
+							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber>
+							<PrivateCode>25</PrivateCode>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1"/>
+							<CarModelProfileRef ref="IT:ITH3:CarModelProfile:taxiCORAPA_CO08" versionRef="1"/>
+						</Vehicle>
+						<Vehicle id="IT:ITH3:Vehicle:taxiCORAPA_BA25" version="1">
+							<ValidBetween>
+								<FromDate>2024-01-01T00:00:00+02:00</FromDate>
+								<ToDate>2024-12-31T23:59:59+02:00</ToDate>
+							</ValidBetween>
+							<Name>Taxi COMO08</Name>
+							<ShortName>CO08</ShortName>
+							<RegistrationNumber>ZZ123ZZ</RegistrationNumber>
+							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber>
+							<PrivateCode>25</PrivateCode>
+							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1"/>
+							<CarModelProfileRef ref="IT:ITH3:CarModelProfile:taxiCORAPA_BA25" versionRef="1"/>
+						</Vehicle>
+					</vehicles>
 				</ResourceFrame>
 				<SiteFrame id="epd:IT:ITH3:SiteFrame-EU_PI_STOP:ita" version="1">
 					<TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
