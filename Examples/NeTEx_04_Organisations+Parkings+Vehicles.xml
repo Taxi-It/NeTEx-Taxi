@@ -8,37 +8,37 @@
 	<Description>Esempio di profilo italiano del NeTEx con dati Taxi</Description>
 	<dataObjects>
 		<!-- Composite Frame Taxi ( Organisations ) -->
-		<CompositeFrame id="epd:IT:ITH3:CompositeFrame_EU_PI_STOP_OFFER:FARE:TaxiPadova:ita" version="1">
+		<CompositeFrame id="epd:IT:ITH3:CompositeFrame_EU_PI_STOP_OFFER:TaxiPadova" version="1">
 			<ValidBetween>
 				<FromDate>2024-01-01T00:00:00.000+02:00</FromDate>
 				<ToDate>2024-12-31T23:59:59.999+02:00</ToDate>
 			</ValidBetween>
 			<TypeOfFrameRef ref="epip:EU_PI_LINE_OFFER" versionRef="1"/>
-		<!--- ======= FRAME DEFAULTS ======== -->
-		<frames>
-			<ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova:ita" version="1">
-				<!--- ======= Operatori ======== -->
-				<organisations>
-					<Operator id="IT:ITH3:Operator:taxiCORAPA:CORAPA" version="1">
-						<PrivateCode>CORAPA</PrivateCode>
-						<Name>Cooperativa Radiotaxi Padova</Name>
-						<ShortName>CORAPA</ShortName>
-						<LegalName>Cooperativa Radiotaxi Padova Scarl</LegalName>
-						<TradingName>CORAPA</TradingName>
-						<ContactDetails>
-							<Email>info@taxipadova.it</Email>
-							<Phone>+39-049-651333</Phone>
-							<Url>https://www.taxipadova.it</Url>
-						</ContactDetails>
-						<OrganisationType>operator</OrganisationType>
-						<Address id="IT:ITH3:Address:taxiCORAPA:1">
-							<CountryName>Italia</CountryName>
-							<Street>Via Svizzera 6</Street>
-							<Town>Padova</Town>
-							<PostCode>35127</PostCode>
-						</Address>
-					</Operator>
-				</organisations>
+			<!-- ======= FRAME DEFAULTS ======= -->
+			<frames>
+				<ResourceFrame id="epd:IT:ITH3:ResourceFrame_EU_PI_COMMON:TaxiPadova" version="1">
+					<!--- ======= Operatori ======== -->
+					<organisations>
+						<Operator id="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1">
+							<PrivateCode>CORAPA</PrivateCode>
+							<Name>Cooperativa Radiotaxi Padova</Name>
+							<ShortName>CORAPA</ShortName>
+							<LegalName>Cooperativa Radiotaxi Padova Scarl</LegalName>
+							<TradingName>CORAPA</TradingName>
+							<ContactDetails>
+								<Email>info@taxipadova.it</Email>
+								<Phone>+39-049-651333</Phone>
+								<Url>www.taxipadova.it</Url>
+							</ContactDetails>
+							<OrganisationType>operator</OrganisationType>
+							<Address id="IT:ITH3:Address:taxiCORAPA">
+								<CountryName>Italia</CountryName>
+								<Street>Via Svizzera 6</Street>
+								<Town>Padova</Town>
+								<PostCode>35127</PostCode>
+							</Address>
+						</Operator>
+					</organisations>
 				<!--- ======= Tipi di Veicolo ======== -->
 				<vehicleTypes>
 						<!--- ======= Veicolo 4 Posti ======== -->
