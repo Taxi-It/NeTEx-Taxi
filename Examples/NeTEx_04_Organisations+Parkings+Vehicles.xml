@@ -141,37 +141,33 @@
 							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1"/>
 						</VehicleModel>
 					</vehicleModels>
-					<!--- ======= Aggiunta Almaviva Liv.4 NeTEx ======== -->
+					<!--- ======= Profili Modello Veicolo - Aggiunta Almaviva Liv.4 NeTEx ======== -->
                     <vehicleModelProfiles> <!--- ======= Servizi alternativi al trasporto pubblico, ma il taxi è complementare ======== -->
 						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_CO07" version="1">
-							<ChildSeat>none</ChildSeat> <!--- ======= Non disponibile ======== -->
+							<ChildSeat>none</ChildSeat> <!--- ======= ND in RT ======== -->
 							<Seats>4</Seats>
-							<Doors>5</Doors> <!--- ======= Non disponibile ======== -->
+							<Doors>5</Doors> <!--- ======= ND in RT ======== -->
 							<Transmission>automatic</Transmission> 
-							<CruiseControl>true</CruiseControl> <!--- ======= Non disponibile ======== -->
-							<SatNav>true</SatNav> <!--- ======= Non disponibile ======== -->
+							<CruiseControl>true</CruiseControl> <!--- ======= ND in RT ======== -->
+							<SatNav>true</SatNav> <!--- ======= ND in RT ======== -->
 							<AirConditioning>true</AirConditioning>
-							<Convertible>false</Convertible> <!--- ======= Non disponibile ======== -->
-							<UsbPowerSockets>true</UsbPowerSockets> <!--- ======= Non disponibile ======== -->
-							<WinterTyres>false</WinterTyres> <!--- ======= Non disponibile ======== -->
-							<Chains>true</Chains> <!--- ======= Non disponibile ======== -->
-							<TrailerHitch>true</TrailerHitch> <!--- ======= Non disponibile ======== -->
-							<RoofRack>true</RoofRack> <!--- ======= Non disponibile ======== -->
-							<CycleRack>false</CycleRack> <!--- ======= Non disponibile ======== -->
-							<SkiRack>false</SkiRack> <!--- ======= Non disponibile ======== -->
+							<Convertible>false</Convertible> <!--- ======= ND in RT ======== -->
+							<UsbPowerSockets>true</UsbPowerSockets> <!--- ======= ND in RT ======== -->
+							<WinterTyres>false</WinterTyres> <!--- ======= ND in RT ======== -->
+							<Chains>true</Chains> <!--- ======= ND in RT ======== -->
+							<TrailerHitch>true</TrailerHitch> <!--- ======= ND in RT ======== -->
+							<RoofRack>true</RoofRack> <!--- ======= ND in RT ======== -->
+							<CycleRack>false</CycleRack> <!--- ======= ND in RT ======== -->
+							<SkiRack>false</SkiRack> <!--- ======= ND in RT ======== -->
 						</CarModelProfile>
 						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_CO08" version="1">
-							<ChildSeat>none</ChildSeat> <!--- ======= Non disponibile ======== -->
+							<ChildSeat>none</ChildSeat> <!--- ======= ND in RT ======== -->
 							<Seats>4</Seats>
-							<Doors>5</Doors> <!--- ======= Non disponibile ======== -->
-							<Transmission>automatic</Transmission> 
 							<AirConditioning>true</AirConditioning>
 						</CarModelProfile>
 						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_BA25" version="1">
-							<ChildSeat>none</ChildSeat> <!--- ======= Non disponibile ======== -->
+							<ChildSeat>none</ChildSeat> <!--- ======= ND in RT ======== -->
 							<Seats>4</Seats>
-							<Doors>5</Doors> <!--- ======= Non disponibile ======== -->
-							<Transmission>automatic</Transmission> 
 							<AirConditioning>true</AirConditioning>
 						</CarModelProfile>
 					</vehicleModelProfiles>
