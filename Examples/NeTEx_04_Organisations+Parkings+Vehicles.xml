@@ -61,7 +61,7 @@
 							</capacities>
 							<LowFloor>false</LowFloor>
 							<HasLiftOrRamp>false</HasLiftOrRamp>
-							<Length>4</Length>
+							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
 						<!--- ======= Veicolo COMO8 ======== -->
 						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1">
@@ -83,7 +83,7 @@
 							</capacities>
 							<LowFloor>false</LowFloor>
 							<HasLiftOrRamp>false</HasLiftOrRamp>
-							<Length>4</Length>
+							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
 						<!--- ======= Veicolo BARI25 Trasporto carrozzine ======== -->
 						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1">
@@ -105,7 +105,7 @@
 							</capacities>
 							<LowFloor>false</LowFloor>
 							<HasLiftOrRamp>true</HasLiftOrRamp> <!--- ======= Trasporto carrozzine ======== -->
-							<Length>4</Length>
+							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
 					</vehicleTypes>
 					<!--- ======= Modelli di Veicolo ======== -->
