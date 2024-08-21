@@ -54,7 +54,6 @@
 								<PassengerCapacity id="IT:ITH3:PassengerCapacity:taxiCORAPA_CO07">
 									<TotalCapacity>5</TotalCapacity>
 									<SeatingCapacity>4</SeatingCapacity>
-									<StandingCapacity>0</StandingCapacity>
 									<SpecialPlaceCapacity>0</SpecialPlaceCapacity>
 									<WheelchairPlaceCapacity>0</WheelchairPlaceCapacity>
 								</PassengerCapacity>
@@ -76,7 +75,6 @@
 								<PassengerCapacity id="IT:ITH3:PassengerCapacity:taxiCORAPA_CO08">
 									<TotalCapacity>7</TotalCapacity>
 									<SeatingCapacity>6</SeatingCapacity>
-									<StandingCapacity>0</StandingCapacity>
 									<SpecialPlaceCapacity>0</SpecialPlaceCapacity>
 									<WheelchairPlaceCapacity>0</WheelchairPlaceCapacity>
 								</PassengerCapacity>
@@ -98,7 +96,6 @@
 								<PassengerCapacity id="IT:ITH3:PassengerCapacity:taxiCORAPA_BA25">
 									<TotalCapacity>5</TotalCapacity>
 									<SeatingCapacity>4</SeatingCapacity>
-									<StandingCapacity>0</StandingCapacity>
 									<SpecialPlaceCapacity>0</SpecialPlaceCapacity>
 									<WheelchairPlaceCapacity>1</WheelchairPlaceCapacity> <!--- ======= Trasporto carrozzine ======== -->
 								</PassengerCapacity>
