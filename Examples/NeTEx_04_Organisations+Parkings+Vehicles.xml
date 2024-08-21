@@ -58,7 +58,7 @@
 									<WheelchairPlaceCapacity>0</WheelchairPlaceCapacity>
 								</PassengerCapacity>
 							</capacities>
-							<LowFloor>false</LowFloor>
+							<LowFloor>false</LowFloor> <!--- ======= ND in RT ======== -->
 							<HasLiftOrRamp>false</HasLiftOrRamp>
 							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
@@ -79,7 +79,7 @@
 									<WheelchairPlaceCapacity>0</WheelchairPlaceCapacity>
 								</PassengerCapacity>
 							</capacities>
-							<LowFloor>false</LowFloor>
+							<LowFloor>false</LowFloor> <!--- ======= ND in RT ======== -->
 							<HasLiftOrRamp>false</HasLiftOrRamp>
 							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
@@ -100,7 +100,7 @@
 									<WheelchairPlaceCapacity>1</WheelchairPlaceCapacity> <!--- ======= Trasporto carrozzine ======== -->
 								</PassengerCapacity>
 							</capacities>
-							<LowFloor>false</LowFloor>
+							<LowFloor>false</LowFloor> <!--- ======= ND in RT ======== -->
 							<HasLiftOrRamp>true</HasLiftOrRamp> <!--- ======= Trasporto carrozzine ======== -->
 							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
