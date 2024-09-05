@@ -142,12 +142,12 @@
                     <vehicleModelProfiles> <!--- ======= Servizi alternativi al trasporto pubblico, ma il taxi è complementare ======== -->
 						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_CO07" version="1">
 							<ChildSeat>none</ChildSeat> <!--- ======= ND in RT ======== -->
-							<Seats>4</Seats>
+							<Seats>5</Seats>
 							<Doors>5</Doors> <!--- ======= ND in RT ======== -->
-							<Transmission>automatic</Transmission> 
+							<Transmission>automatic</Transmission> <!--- ======= ND in RT ======== --> 
 							<CruiseControl>true</CruiseControl> <!--- ======= ND in RT ======== -->
 							<SatNav>true</SatNav> <!--- ======= ND in RT ======== -->
-							<AirConditioning>true</AirConditioning>
+							<AirConditioning>true</AirConditioning> <!--- ======= ND in RT ======== -->
 							<Convertible>false</Convertible> <!--- ======= ND in RT ======== -->
 							<UsbPowerSockets>true</UsbPowerSockets> <!--- ======= ND in RT ======== -->
 							<WinterTyres>false</WinterTyres> <!--- ======= ND in RT ======== -->
@@ -158,14 +158,10 @@
 							<SkiRack>false</SkiRack> <!--- ======= ND in RT ======== -->
 						</CarModelProfile>
 						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_CO08" version="1">
-							<ChildSeat>none</ChildSeat> <!--- ======= ND in RT ======== -->
-							<Seats>4</Seats>
-							<AirConditioning>true</AirConditioning>
+							<Seats>7</Seats>
 						</CarModelProfile>
 						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_BA25" version="1">
-							<ChildSeat>none</ChildSeat> <!--- ======= ND in RT ======== -->
-							<Seats>4</Seats>
-							<AirConditioning>true</AirConditioning>
+							<Seats>5</Seats>
 						</CarModelProfile>
 					</vehicleModelProfiles>
 					<!--- ======= Veicoli ======== -->
@@ -177,8 +173,8 @@
 							</ValidBetween>
 							<Name>Taxi COMO07</Name>
 							<ShortName>CO07</ShortName>
-							<RegistrationNumber>ZZ321ZZ</RegistrationNumber>
-							<OperationalNumber>ZZZZZZZZZZZZZZZZ1</OperationalNumber>
+							<RegistrationNumber>ZZ321ZZ</RegistrationNumber> <!--- == TARGA DEL VEICOLO== -->
+							<OperationalNumber>ZZZZZZZZZZZZZZZZ1</OperationalNumber> <!--- ======= ND in RT ======== -->
 							<PrivateCode>111</PrivateCode>
 							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
 							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO07" version="1"/>
@@ -192,7 +188,7 @@
 							<Name>Taxi COMO08</Name>
 							<ShortName>CO08</ShortName>
 							<RegistrationNumber>ZZ123ZZ</RegistrationNumber>
-							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber>
+							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber> <!--- ======= ND in RT ======== -->
 							<PrivateCode>25</PrivateCode>
 							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
 							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1"/>
@@ -206,7 +202,7 @@
 							<Name>Taxi COMO08</Name>
 							<ShortName>CO08</ShortName>
 							<RegistrationNumber>ZZ123ZZ</RegistrationNumber>
-							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber>
+							<OperationalNumber>ZZZZZZZZZZXXXXXXX1</OperationalNumber> <!--- ======= ND in RT ======== -->
 							<PrivateCode>25</PrivateCode>
 							<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
 							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1"/>
