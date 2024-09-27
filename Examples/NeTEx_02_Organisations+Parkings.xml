@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- NeTEX italian Profile | Taxi Organisations + Parkings | Revisione 2024-07-09 -->
-<!-- Realizzato da Taxi.it -->
+<!-- NeTEX italian Profile | Taxi Organisations + Parkings + Vehicles | Revisione 2024-09-27 -->
+<!-- Made by Taxi.it -->
 <!-- Fonte: https://github.com/5Tsrl/netex-italian-profile/blob/main/Examples/Netex_ITA_1.10_EPIP%2BLevel2%2BFare%2BAlternativeModes%2BAccessibility_with_versioning_final.xml -->
 <PublicationDelivery xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:siri="http://www.siri.org.uk/siri" version="1.0" xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex ../xsd/NeTEx_publication_Lev4.xsd">
 	<PublicationTimestamp>2024-01-01T12:00:00.000+02:00</PublicationTimestamp>
