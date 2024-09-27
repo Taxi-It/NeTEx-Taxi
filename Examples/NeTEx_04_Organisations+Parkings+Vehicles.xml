@@ -60,7 +60,6 @@
 							</capacities>
 							<LowFloor>false</LowFloor> <!--- ======= ND in RT ======== -->
 							<HasLiftOrRamp>false</HasLiftOrRamp>
-							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
 						<!--- ======= Veicolo COMO8 ======== -->
 						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1">
@@ -81,7 +80,6 @@
 							</capacities>
 							<LowFloor>false</LowFloor> <!--- ======= ND in RT ======== -->
 							<HasLiftOrRamp>false</HasLiftOrRamp>
-							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
 						<!--- ======= Veicolo BARI25 Trasporto carrozzine ======== -->
 						<VehicleType id="IT:ITH3:VehicleType:taxiCORAPA_BA25" version="1">
@@ -102,7 +100,6 @@
 							</capacities>
 							<LowFloor>false</LowFloor> <!--- ======= ND in RT ======== -->
 							<HasLiftOrRamp>true</HasLiftOrRamp> <!--- ======= Trasporto carrozzine ======== -->
-							<Length>4</Length> <!--- ======= ND in RT ======== -->
 						</VehicleType>
 					</vehicleTypes>
 					<!--- ======= Modelli di Veicolo ======== -->
@@ -139,16 +136,11 @@
 						</VehicleModel>
 					</vehicleModels>
 					<!--- ======= Profili Modello Veicolo - Aggiunta Almaviva Liv.4 NeTEx ======== -->
-                    <vehicleModelProfiles> <!--- ======= Servizi alternativi al trasporto pubblico, ma il taxi è complementare ======== -->
+                    			<vehicleModelProfiles>
 						<CarModelProfile id="IT:ITH3:CarModelProfile:taxiCORAPA_CO07" version="1">
 							<ChildSeat>none</ChildSeat> <!--- ======= ND in RT ======== -->
 							<Seats>5</Seats>
-							<Doors>5</Doors> <!--- ======= ND in RT ======== -->
-							<Transmission>automatic</Transmission> <!--- ======= ND in RT ======== --> 
-							<CruiseControl>true</CruiseControl> <!--- ======= ND in RT ======== -->
-							<SatNav>true</SatNav> <!--- ======= ND in RT ======== -->
 							<AirConditioning>true</AirConditioning> <!--- ======= ND in RT ======== -->
-							<Convertible>false</Convertible> <!--- ======= ND in RT ======== -->
 							<UsbPowerSockets>true</UsbPowerSockets> <!--- ======= ND in RT ======== -->
 							<WinterTyres>false</WinterTyres> <!--- ======= ND in RT ======== -->
 							<Chains>true</Chains> <!--- ======= ND in RT ======== -->
