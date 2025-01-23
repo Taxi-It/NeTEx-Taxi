@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- NeTEX italian Profile | Taxi Organisations + Parkings + Vehicles | Revisione 2024-09-27 -->
+<!-- NeTEX italian Profile | Taxi Organisations + Parkings + Vehicles + MobilityService | Revisione 2025-01-23 -->
 <!-- Made by Taxi.it -->
 <!-- Fonte: https://github.com/5Tsrl/netex-italian-profile/blob/main/Examples/Netex_ITA_1.10_EPIP%2BLevel2%2BFare%2BAlternativeModes%2BAccessibility_with_versioning_final.xml -->
 <PublicationDelivery xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:siri="http://www.siri.org.uk/siri" version="1.0" xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex ../xsd/NeTEx_publication_Lev4.xsd">
@@ -244,7 +244,7 @@
 						</Parking>
 					</parkings>
 				</SiteFrame>
-				<!-- ###### AlmavivA ##### liv4 -->
+				<!--- ======= MobilityServiceFrame - Aggiunta Almaviva Liv.4 NeTEx ======== -->
 				<MobilityServiceFrame id="epd:IT:ITH3:MobilityServiceFrame_EU_PI_MOBILITY:ita" version="1">
 					<FrameDefaults>
 						<DefaultCurrency>EUR</DefaultCurrency>
@@ -304,7 +304,7 @@
 						</MobilityServiceConstraintZone>
 					 </mobilityServiceConstraintZones>
 				</MobilityServiceFrame>
-				<!-- ###### AlmavivA ##### liv4 -->
+				<!--- ======= MobilityServiceFrame - Aggiunta Almaviva Liv.4 NeTEx ======== -->
 			</frames>
 		</CompositeFrame>
 	</dataObjects>
