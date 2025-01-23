@@ -264,17 +264,17 @@
 						</Fleet>
 					</fleets>
 					<modesOfOperation>
-						<VehicleSharing id="IT:ITH3:VehicleSharing:taxiCORAPA" version="1">
+						<VehicleSharing id="IT:ITH3:VehicleSharing:taxiCORAPA:VS:1" version="1">
 							<submodes>
-								<Submode id="IT:ITH3:Submode:taxiCORAPA" version="1">
+								<Submode id="IT:ITH3:Submode:taxiCORAPA:submode:1" version="1">
 									<TransportMode>taxi</TransportMode>
 								</Submode>
 							</submodes>
 						</VehicleSharing>
 					</modesOfOperation>
 					<mobilityServices>
-						<VehicleSharingService id="IT:ITH3:VehicleSharingService:taxiCORAPA" version="1">
-							<VehicleSharingRef version="1" ref="IT:ITH3:VehicleSharing:taxiCORAPA"/>
+						<VehicleSharingService id="IT:ITH3:VehicleSharingService:taxiCORAPA:VSS:1" version="1">
+							<VehicleSharingRef ref="IT:ITH3:VehicleSharing:taxiCORAPA:VS:1" version="1"/>
 							<FloatingVehicles>true</FloatingVehicles>
 							<fleets>
 								<FleetRef ref="IT:ITH3:Fleet:taxiCORAPA:fleet:1" version="1"/>
@@ -282,7 +282,7 @@
 						</VehicleSharingService>
 					</mobilityServices>
 					<mobilityServiceConstraintZones>
-						<MobilityServiceConstraintZone id="IT:ITC1:MobilityServiceConstraintZone:taxiCORAPA" version="1">
+						<MobilityServiceConstraintZone id="IT:ITC1:MobilityServiceConstraintZone:taxiCORAPA:msc:1" version="1">
 							<gml:Polygon gml:id="L01_CS">
 								<gml:interior>
 									<gml:LinearRing>
@@ -300,7 +300,7 @@
 									</gml:LinearRing>
 								</gml:interior>
 							</gml:Polygon>
-						    <VehicleSharingServiceRef ref="IT:ITH3:VehicleSharingService:taxiCORAPA" version="1"/>
+						    <VehicleSharingServiceRef ref="IT:ITH3:VehicleSharingService:taxiCORAPA:VSS:1" version="1"/>
 						</MobilityServiceConstraintZone>
 					 </mobilityServiceConstraintZones>
 				</MobilityServiceFrame>
