@@ -104,7 +104,7 @@
 					</vehicleTypes>
 					<!--- ======= Modelli di Veicolo ======== -->
 					<vehicleModels>
-						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA:TeslaModelC" version="1">
+						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA_CO07" version="1">
 							<ValidBetween>
 								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
@@ -114,7 +114,7 @@
 							<Manufacturer>Tesla</Manufacturer>
 							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO07" version="1"/>
 						</VehicleModel>
-						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA:PriusPlus" version="1">
+						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA_CO08" version="1">
 							<ValidBetween>
 								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
@@ -124,7 +124,7 @@
 							<Manufacturer>Toyota</Manufacturer>
 							<VehicleTypeRef ref="IT:ITH3:VehicleType:taxiCORAPA_CO08" version="1"/>
 						</VehicleModel>
-						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA:Caddy" version="1">
+						<VehicleModel id="IT:ITC1:VehicleModel:taxiCORAPA_BA25" version="1">
 							<ValidBetween>
 								<FromDate>2021-01-01T00:00:00+02:00</FromDate>
 								<ToDate>2021-12-31T23:59:59+02:00</ToDate>
