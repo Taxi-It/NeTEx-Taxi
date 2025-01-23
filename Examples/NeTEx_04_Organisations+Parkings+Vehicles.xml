@@ -244,6 +244,67 @@
 						</Parking>
 					</parkings>
 				</SiteFrame>
+				<!-- ###### AlmavivA ##### liv4 -->
+				<MobilityServiceFrame id="epd:IT:ITH3:MobilityServiceFrame_EU_PI_MOBILITY:ita" version="1">
+					<FrameDefaults>
+						<DefaultCurrency>EUR</DefaultCurrency>
+					</FrameDefaults>
+					<fleets>
+						<Fleet id="IT:ITH3:Fleet:taxiCORAPA:fleet:1" version="1">
+						<ValidBetween>
+							<FromDate>2022-01-01T00:00:00.000+02:00</FromDate>
+							<ToDate>2022-12-31T00:00:00.000+02:00</ToDate>
+						</ValidBetween>
+						<members>
+							<VehicleRef ref="IT:ITH3:Vehicle:taxiCORAPA_CO07" version="1"/>
+							<VehicleRef ref="IT:ITH3:Vehicle:taxiCORAPA_CO08" version="1"/>
+							<VehicleRef ref="IT:ITH3:Vehicle:taxiCORAPA_BA25" version="1"/>
+						</members>
+						<OperatorRef ref="IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA" version="1"/>
+						</Fleet>
+					</fleets>
+					<modesOfOperation>
+						<VehicleSharing id="IT:ITH3:VehicleSharing:taxiCORAPA" version="1">
+							<submodes>
+								<Submode id="IT:ITH3:Submode:taxiCORAPA" version="1">
+									<TransportMode>taxi</TransportMode>
+								</Submode>
+							</submodes>
+						</VehicleSharing>
+					</modesOfOperation>
+					<mobilityServices>
+						<VehicleSharingService id="IT:ITH3:VehicleSharingService:taxiCORAPA" version="1">
+							<VehicleSharingRef version="1" ref="IT:ITH3:VehicleSharing:taxiCORAPA"/>
+							<FloatingVehicles>true</FloatingVehicles>
+							<fleets>
+								<FleetRef ref="IT:ITH3:Fleet:taxiCORAPA:fleet:1" version="1"/>
+							</fleets>
+						</VehicleSharingService>
+					</mobilityServices>
+					<mobilityServiceConstraintZones>
+						<MobilityServiceConstraintZone id="IT:ITC1:MobilityServiceConstraintZone:taxiCORAPA" version="1">
+							<gml:Polygon gml:id="L01_CS">
+								<gml:interior>
+									<gml:LinearRing>
+										<gml:pos>11.9043636 45.5141229</gml:pos>
+										<gml:pos>11.8109513 45.5117519</gml:pos>
+										<gml:pos>11.7278957 45.4703207</gml:pos>
+										<gml:pos>11.7155361 45.3826142</gml:pos>
+										<gml:pos>11.7945003 45.3184347</gml:pos>
+										<gml:pos>11.9174099 45.3102261</gml:pos>
+										<gml:pos>11.9977474 45.3353311</gml:pos>
+										<gml:pos>12.0471859 45.4004556</gml:pos>
+										<gml:pos>12.0252132 45.4635789</gml:pos>
+										<gml:pos>11.9805813 45.4943921</gml:pos>
+										<gml:pos>11.9043636 45.5141229</gml:pos>
+									</gml:LinearRing>
+								</gml:interior>
+							</gml:Polygon>
+						    <VehicleSharingServiceRef ref="IT:ITH3:VehicleSharingService:taxiCORAPA" version="1"/>
+						</MobilityServiceConstraintZone>
+					 </mobilityServiceConstraintZones>
+				</MobilityServiceFrame>
+				<!-- ###### AlmavivA ##### liv4 -->
 			</frames>
 		</CompositeFrame>
 	</dataObjects>
