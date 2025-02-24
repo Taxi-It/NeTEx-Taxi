@@ -264,17 +264,18 @@
 						</Fleet>
 					</fleets>
 					<modesOfOperation>
-						<VehicleSharing id="IT:ITH3:VehicleSharing:taxiCORAPA:VS:1" version="1">
+						<VehicleSharing id="IT:ITH3:VehicleSharing:taxiCORAPA" version="1">
 							<submodes>
-								<Submode id="IT:ITH3:Submode:taxiCORAPA:submode:1" version="1">
+								<Submode id="IT:ITH3:Submode:taxiCORAPA" version="1">
 									<TransportMode>taxi</TransportMode>
+									<SelfDriveSubmode>unknown</SelfDriveSubmode>
 								</Submode>
 							</submodes>
 						</VehicleSharing>
 					</modesOfOperation>
 					<mobilityServices>
-						<VehicleSharingService id="IT:ITH3:VehicleSharingService:taxiCORAPA:VSS:1" version="1">
-							<VehicleSharingRef ref="IT:ITH3:VehicleSharing:taxiCORAPA:VS:1" version="1"/>
+						<VehicleSharingService id="IT:ITH3:VehicleSharingService:taxiCORAPA" version="1">
+							<VehicleSharingRef ref="IT:ITH3:VehicleSharing:taxiCORAPA" version="1"/>
 							<FloatingVehicles>true</FloatingVehicles>
 							<fleets>
 								<FleetRef ref="IT:ITH3:Fleet:taxiCORAPA:fleet:1" version="1"/>
