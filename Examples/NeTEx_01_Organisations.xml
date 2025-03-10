@@ -4,8 +4,8 @@
 <!-- Fonte: https://github.com/5Tsrl/netex-italian-profile/blob/main/Examples/Netex_ITA_1.10_EPIP%2BLevel2%2BFare%2BAlternativeModes%2BAccessibility_with_versioning_final.xml -->
 <PublicationDelivery xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:siri="http://www.siri.org.uk/siri" version="1.0" xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex ../xsd/NeTEx_publication_Lev4.xsd">
 	<PublicationTimestamp>2024-01-01T12:00:00.000+02:00</PublicationTimestamp>
-	<ParticipantRef>RAP</ParticipantRef>
-	<Description>Esempio di profilo italiano del NeTEx con dati Taxi</Description>
+	<ParticipantRef>RAP Veneto</ParticipantRef>
+	<Description>NeTEx relativo al servizio taxi di "Cooperativa Radiotaxi Padova Scarl" realizzato da "Radiotaxi Veneto Societa' Cooperativa" (www.taxiveneto.it)</Description>
 	<dataObjects>
 		<!-- Composite Frame Taxi ( Organisations ) -->
 		<CompositeFrame id="epd:IT:ITH3:CompositeFrame_EU_PI_STOP_OFFER:TaxiPadova" version="1">
