@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- NeTEX italian Profile | Taxi Organisations + Parkings + Vehicles + MobilityService | Revisione 2025-01-23 -->
+<!-- NeTEX italian Profile | Taxi Organisations + Parkings + Vehicles + MobilityService | Revisione 2025-08-20 -->
 <!-- Made by taxiveneto.it, in collaboration with taxi.it -->
 <!-- Fonte: https://github.com/5Tsrl/netex-italian-profile/blob/main/Examples/Netex_ITA_1.10_EPIP%2BLevel2%2BFare%2BAlternativeModes%2BAccessibility_with_versioning_final.xml -->
 <PublicationDelivery xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:siri="http://www.siri.org.uk/siri" version="1.0" xmlns="http://www.netex.org.uk/netex" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.netex.org.uk/netex ../xsd/NeTEx_publication_Lev4.xsd">
 	<PublicationTimestamp>2024-01-01T12:00:00.000+02:00</PublicationTimestamp>
-	<ParticipantRef>RAP Veneto</ParticipantRef>
+	<ParticipantRef>RAPVeneto</ParticipantRef>
 	<Description>NeTEx relativo al servizio taxi di "Cooperativa Radiotaxi Padova Scarl" realizzato da "Radiotaxi Veneto Societa' Cooperativa" (www.taxiveneto.it)</Description>
 	<dataObjects>
 		<!-- Composite Frame Taxi ( Organisations ) -->
@@ -206,7 +206,7 @@
 					<TypeOfFrameRef ref="epip:EU_PI_STOP" versionRef="1"/>
 					<!--- ======= Posteggi Taxi ======== -->					
 					<parkings>
-						<Parking id="IT:ITH3:Parking:taxiStandPadova:p:StazioneFS" version="1">
+						<Parking id="IT:ITH3:Parking:CORAPA:26_STAZIONE" version="1">
 							<Name>Parcheggio taxi Stazione FS</Name>
 							<ShortName>Stazione FS</ShortName>
 							<Centroid>
@@ -224,7 +224,7 @@
 							<RechargingAvailable>false</RechargingAvailable>
 							<ParkingReservation>noReservations</ParkingReservation>
 						</Parking>
-						<Parking id="IT:ITH3:Parking:taxiStandPadova:p:OspedaleCivile" version="1">
+						<Parking id="IT:ITH3:Parking:CORAPA:24_OSPEDALE" version="1">
 							<Name>Parcheggio taxi Ospedale Civile</Name>
 							<ShortName>Ospedale Civile</ShortName>
 							<Centroid>
